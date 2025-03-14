@@ -1,0 +1,301 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #324851; /* Primary text color */
+    background-color: #7DA3A1;
+  }
+  
+ /* Default Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #324851; /* Dark background for header */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: left;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: background 0.3s, padding 0.3s; /* Smooth transition */
+  }
+  
+  /* Sticky Header Styles (added via JavaScript) */
+  header.sticky {
+    background: rgba(50, 72, 81, 0.9); /* Semi-transparent background */
+    padding: 0.5rem 0; /* Smaller padding */
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: #CDCDC0;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  header nav ul li a:hover {
+    color: #86AC41; /* Accent color for hover */
+  }
+  
+  /* Home Section */
+  .home-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two-column grid */
+    align-items: center;
+    height: 100vh;
+    background: #7DA3A1; /* Light background for home section */
+    padding: 5rem;;
+  }
+  
+  .home-content h1 {
+    font-size: 2.5rem;
+    padding: 2px;
+    color: #324851; /* Dark text for contrast */
+  }
+  
+  .home-content p {
+    font-size: 1.2rem;
+    color: #34675C; /* Subdued text color */
+  }
+  
+  .profile-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    justify-self: end; /* Align photo to the right */
+    border: 5px solid #86AC41; /* Accent border */
+  }
+  
+  /* About Section */
+  .about-section {
+    padding: 2rem;
+    background: #7DA3A1;
+    text-align: center;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #444C5C; /* Dark text for readability */
+  }
+  
+  .about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  /* Projects Section */
+  .projects-section {
+    padding: 2rem;
+    background: #7DA3A1; /* Dark background for projects section */
+    text-align: center;
+  }
+  
+  .projects-section h2 {
+    color: #fff; /* White text for contrast */
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .project-card {
+    background: #444C5C; /* Light background for cards */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+  }
+  
+  .project-card h3 {
+    margin-bottom: 0.5rem;
+    color: #CDCDC0; /* Dark text for headings */
+  }
+  
+  .project-card p {
+    color: #7DA3A1; /* Subdued text color */
+  }
+  
+  .project-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #86AC41; /* Accent color for links */
+    text-decoration: none;
+    border: 2px solid #86AC41;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .project-link:hover {
+    background: #86AC41;
+    color: #fff;
+  }
+  
+  /* Skills Section */
+  .skills-section {
+    padding: 2rem;
+    background: #7DA3A1;
+    text-align: center;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .skill-category {
+    background: #CDCDC0;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-category h3 {
+    color: #324851;
+    margin-bottom: 1rem;
+  }
+  
+  .skill-category ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skill-category ul li {
+    margin-bottom: 0.5rem;
+    color: #34675C;
+  }
+
+  /* Interests Section */
+.interests-section {
+    padding: 2rem;
+    background: #7DA3A1; /* Matching the About section background */
+    text-align: center;
+  }
+  
+  .interests-section h2 {
+    color: #86AC41; /* Matching the About section heading color */
+    margin-bottom: 1.5rem;
+  }
+  
+  .interests-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #86AC41; /* Matching the About section text color */
+  }
+  
+  .interests-content ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .interests-content ul li {
+    background: #5B7065; /* Light background for list items */
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .interests-content ul li:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .interests-content ul li p {
+    font-size: 1.1rem;
+    color: #324851; /* Dark text for readability */
+    margin-bottom: 1rem;
+  }
+  
+  .interests-content ul li img {
+    width: 200px; /* Smaller image size */
+    height: 400px;
+    border-radius: 10px;
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+  }
+  
+  .interests-content ul li video {
+    width: 100%; /* Responsive video width */
+    max-width: 200px; /* Limits video size */
+    border-radius: 10px;
+    margin-top: 1rem;
+  }
+  /* Education Section */
+  .education-section {
+    padding: 2rem;
+    background: #7DA3A1;
+    text-align: center;
+  }
+  
+  .education-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #324851;
+  }
+  
+  .education-content h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .education-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  /* Footer */
+  footer {
+    background: #324851; /* Dark background for footer */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .interests-content ul li img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 1rem;
+  }
+  
+  .interests-content ul li video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 1rem;
+  }
+  
+  footer p {
+    margin: 0.5rem 0;
+  }
+  
+  footer a {
+    color: #86AC41;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
